@@ -1,0 +1,200 @@
+html {
+    height: 100%;
+    width: 100%;
+   }
+body {
+  margin: 0;
+  background-image: url(https://thumb.cloud.mail.ru/thumb/xw1/личное/IMG_1021.jpg?x-email=lady.kvardakova%40mail.ru);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+    width: 100%;
+  position: relative;
+}
+body:before {
+    margin: 0;
+  content: "";
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+    margin: 0;
+}
+
+nav {
+    
+  text-align: right;
+  padding: 0px 0 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  color: #222;
+}
+.topmenu > li {
+  display: inline-block;
+  position: relative;
+}
+.topmenu > li > a {
+    color: white;
+  position: relative;
+  padding: 10px 15px;
+  font-family: 'corbel';
+    font-weight: bolder;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 3px;
+     margin-top: 1px;
+}
+.topmenu > li > a:before {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 100%;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, 20px);
+  opacity: 0;
+  transition: .3s;
+}
+.topmenu li:hover a:before {
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+.submenu {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  top: 100%;
+  width: 150px;
+  padding: 15px 0 15px;
+  margin-top: 5px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0,0,0,.2);
+  box-sizing: border-box;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(-50%, 20px);
+  transition: .3s;
+}
+.topmenu > li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+.submenu a {
+  font-family: 'bimini', serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  padding: 5px 10px;
+  transition: .2s linear;
+}
+.submenu a:hover {background: #e8e8e8;}
+
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+
+#vk{
+    padding: 850px 0 0;
+    margin-right: 5%;
+    filter: brightness(200%);
+    float: right;
+    
+    
+}
+#inst{
+    filter: brightness(200%);
+    margin-right: 20px;
+    float: right;
+    padding: 850px 0 0;
+}
+
+.body_slides{
+    list-style:none;
+    margin:0;
+    padding:0;
+    z-index:-2; 
+    background:#000;}
+.body_slides,
+.body_slides:after{
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;}
+.body_slides:after { 
+    content: '';
+    background: transparent url(images/1.png) repeat top left;}
+ 
+ 
+.body_slides li{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-size:cover;
+    background-repeat:none;
+    opacity:0;
+    -webkit-animation: anim_slides 42s linear infinite 0s;
+    -moz-animation: anim_slides 42s linear infinite 0s;
+    -o-animation: anim_slides 42s linear infinite 0s;
+    -ms-animation: anim_slides 42s linear infinite 0s;
+    animation: anim_slides 42s linear infinite 0s;
+}
+.body_slides li:nth-child(1){
+background-image: url(https://thumb.cloud.mail.ru/thumb/xw1/на%20сайт/Для%20сайта/IMG_2093%281%29.jpg?x-email=lady.kvardakova%40mail.ru) 
+}
+.body_slides li:nth-child(2){
+-webkit-animation-delay: 6.0s;
+-moz-animation-delay: 6.0s;
+background-image: url(https://thumb.cloud.mail.ru/thumb/xw1/на%20сайт/Для%20сайта/IMG_2095%281%29.jpg?x-email=lady.kvardakova%40mail.ru) 
+}
+.body_slides li:nth-child(3){
+-webkit-animation-delay: 12.0s;
+-moz-animation-delay: 12.0s;
+background-image: url(https://thumb.cloud.mail.ru/thumb/xw1/на%20сайт/Для%20сайта/IMG_2107%281%29.jpg?x-email=lady.kvardakova%40mail.ru) 
+}
+.body_slides li:nth-child(4){
+-webkit-animation-delay: 18.0s;
+-moz-animation-delay: 18.0s;
+background-image: url(https://thumb.cloud.mail.ru/thumb/xw1/на%20сайт/Для%20сайта/IMG_9478%281%29.jpg?x-email=lady.kvardakova%40mail.ru)
+}
+.body_slides li:nth-child(5){
+-webkit-animation-delay: 24.0s;
+-moz-animation-delay: 24.0s;
+background-image: url(https://thumb.cloud.mail.ru/thumb/xw1/на%20сайт/Для%20сайта/IMG_9660%281%29.jpg?x-email=lady.kvardakova%40mail.ru)
+}
+.body_slides li:nth-child(6){
+-webkit-animation-delay: 30.0s;
+-moz-animation-delay: 30.0s;
+background-image: url(https://thumb.cloud.mail.ru/thumb/xw1/на%20сайт/Для%20сайта/IMG_9675%281%29.jpg?x-email=lady.kvardakova%40mail.ru)
+}
+@-webkit-keyframes anim_slides {
+0% {opacity:0;}
+6% {opacity:1;}
+24% {opacity:1;}
+30% {opacity:0;}
+100% {opacity:0;}
+}
+@-moz-keyframes anim_slides {
+0% {opacity:0;}
+6% {opacity:1;}
+24% {opacity:1;}
+30% {opacity:0;}
+100% {opacity:0;}
+}
